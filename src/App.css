@@ -1,0 +1,18 @@
+.container{
+    padding-top: 80px;
+}
+.login{
+    font-size: 30px;
+    text-align: center;
+   
+}
+    
+form{
+    border-radius: 10px;
+    border: 1px solid #eee;
+    padding: 40px;
+    background-color: #eee;
+}
+.link-text{
+    margin-left: 10px;
+}

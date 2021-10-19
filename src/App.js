@@ -3,23 +3,36 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div>
-     <form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <div className="container">
+    
+      <div className="row">
+
+      <div className="col-md-4">
+      </div>
+
+  <div className="col-md-4">
+ 
+      <form className="form">
+      <h1 className="login">Login</h1>
+    <div className="mb-3">
+      <label for="username" className="form-label">Username</label>
+      <input type="email" className="form-control" id="esername" aria-describedby="emailHelp"/>
+    </div>
+
+    <div className="mb-3">
+      <label for="password" className="form-label">Password</label>
+      <input type="password" className="form-control" id="password"/>
+    </div>
+    
+    <button type="submit" className="btn btn-success">Se connecter</button>
+    <span className="link-text"><a href="">Pas encore inscrits ?</a></span>
+  </form>
+</div>
+
+  <div className="col-md-4">
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1"/>
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</div>
+
     </div>
   );
 }
